@@ -1,0 +1,128 @@
+COMPTE RENDU LAB3
+________________________________________________________________________________________________
+mkdir lab3
+cd lab3
+________________________________________________________________________________________________
+3) git clone https://github.com/khachicha/5AS05-partie3.git
+ (téléchargement du fichier dans le lab3)
+________________________________________________________________________________________________
+4) Accès au dossier : cd 5AS05-partie3
+   liste des fichiers: ls 
+   ls -lrt 
+(option l = droit d'accès, option t = trier en fonction de la date, option r = liste des caractéristiques de chaque fichiers)
+
+on a 3 fichiers + 1 répertoire que linux comprend comme un fichier aussi.
+README: 24 octes, MICROSOFT: 34359 octets, sardar: 4096 octets (taille minimal d'un fichier),fichier texte: 70408 octets
+________________________________________________________________________________________________
+5) La taille du répertoire n'est pas correcte en allant dans le répertoire sardar 
+(cd sardar) on trouve 3 fichiers de tailles différentes 
+(sardar1 =13836 octets,sardar2=5950 octets et sardar3 = 81994 octets) ce qui ne corresponds pas aux 4096 octets du dossier sardar.
+La taille du dossier sardar corespond à la taille minimale d'un fichier car la commande ls -lrt prends tout comme des fichiers.
+________________________________________________________________________________________________
+6) du -h Microsoft : 36 koctets (taille sur le disque) option -k pour résultat en kilooctets
+   ls -lrt Microsoft : 34359 octets (taille réelle du fichier), la différence vient du fait que ces 
+   commandes ne font pas référence à la même taille la première (du ou du -h) réfère à la taille prise 
+   sur le disque et l'autre (ls -lrt) à la taille réelle du fichier.
+   ________________________________________________________________________________________________
+7) stat Microsoft, (donne des infos sur un fichier)
+informations: taille réelle : 34359 octets, portion de disque occupées : 72
+Accès: user (read&write),groupes (read&write),others(read).
+________________________________________________________________________________________________
+
+8) commande : ls -d .* (Oui il y a 2 fichiers cachés .lightbulb et .git)
+________________________________________________________________________________________________
+
+9)ls -lart
+________________________________________________________________________________________________
+
+10)du -sk * | sort -n
+________________________________________________________________________________________________
+
+11) cat answering-machine.txt
+________________________________________________________________________________________________
+12) less answering-machine.txt, touche espace pour changer de page et q pour quitter.
+________________________________________________________________________________________________
+
+14) instalation : sudo apt install vim 
+
+vim answering-machine.txt, G (pour aller à la fin du fichier), A (pour insérer la phrase),echap (pour sortir du mode insertion).
+________________________________________________________________________________________________
+
+15)/gravelly,entrer, diw (pour suprimer le mot ou le curseur pointe).
+________________________________________________________________________________________________
+
+16) :w (pour sauvegarder)
+________________________________________________________________________________________________
+
+17-19)/planet, entrer, n (planet apparaît 2 fois)
+
+   /BEEP, entrer, ? 
+   (il faut appuyer à cahque fois sur entrer pour remonter de une occurence)
+   (planet apparaît 19 fois)
+   ________________________________________________________________________________________________
+   
+20) tail -20 sardar3.txt
+________________________________________________________________________________________________
+
+21)vim Microsoft, /trust ou alors grep trust Microsoft (trust apparît 2 fois).
+________________________________________________________________________________________________
+
+22) grep money *
+________________________________________________________________________________________________
+
+23)
+________________________________________________________________________________________________
+
+24)ls -d .* (pour affichier les fichiers cachés)
+   mv .lightbulb lightbulb (en renommant sans le point le fichier n'est plus caché).
+________________________________________________________________________________________________
+
+25) cd sardar, pwd (pour afficher le répertoire actuel)
+________________________________________________________________________________________________
+
+26) mv sardar3.txt .. (On utilise les .. pour désigner le répertoire précédent (parent)).
+________________________________________________________________________________________________
+
+27) cd .. 
+________________________________________________________________________________________________
+
+28) rm Microsoft
+________________________________________________________________________________________________
+
+29)mkdir archive,pwd (pour affichier le chemin ou l'on va copier les fichiers), 
+commande :cp -r * /home/bardiau/Desktop/lab3/archive (option -r pour copier aussi les répertoires)
+________________________________________________________________________________________________
+
+30) ln -s /home/bardiau/Desktop/lab3/5AS05-partie3/sardar/sardar1.txt link1 
+    (lien symbolique pour le fichier sardar1.txt)
+    
+    ln -s /home/bardiau/Desktop/lab3/5AS05-partie3/sardar/sardar2.txt link2
+    (lien symbolique pour le fichier sardar2.txt)
+    
+    ln -s /home/bardiau/Desktop/lab3/5AS05-partie3/sardar sardarlink
+    (lien symbolique pour le répertoire sardar)
+________________________________________________________________________________________________
+
+31)ls, oui ils sont en bleu
+________________________________________________________________________________________________
+
+32)(link2 le liens symbolique du fichier apparaît en rouge)
+________________________________________________________________________________________________
+
+33)vim sardar1.txt, G, A ("Master SC),echap,:w 
+(en modifiant le fichier le fichier lié au lien symbolique change aussi)
+________________________________________________________________________________________________
+
+34) ls -lrt *, (j'ai rw pour user donc je peux le modifier donc je peux le modifier).
+________________________________________________________________________________________________
+
+35) chmod 777 sardar1.txt (je donne le droit d'accès à tou le monde)
+________________________________________________________________________________________________
+
+36)tar jcvf archive.tar.bz2 5AS05-partie3
+________________________________________________________________________________________________
+
+37)tar -tf archive.tar.bz2
+
+
+
