@@ -43,7 +43,7 @@ ________________________________________________________________________________
 12) less answering-machine.txt, touche espace pour changer de page et q pour quitter.
 ________________________________________________________________________________________________
 
-14) instalation : sudo apt install vim 
+13,14) instalation : sudo apt install vim 
 
 vim answering-machine.txt, G (pour aller à la fin du fichier), A (pour insérer la phrase),echap (pour sortir du mode insertion).
 ________________________________________________________________________________________________
