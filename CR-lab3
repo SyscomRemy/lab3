@@ -45,7 +45,7 @@ ________________________________________________________________________________
 
 13,14) instalation : sudo apt install vim 
 
-vim answering-machine.txt, G (pour aller à la fin du fichier), A (pour insérer la phrase),echap (pour sortir du mode insertion).
+vim answering-machine.txt, G (pour aller à la fin du fichier), I (pour insérer la phrase),echap (pour sortir du mode insertion).
 ________________________________________________________________________________________________
 
 15)/gravelly,entrer, diw (pour suprimer le mot ou le curseur pointe).
