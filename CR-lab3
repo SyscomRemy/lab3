@@ -113,10 +113,10 @@ ________________________________________________________________________________
 (en modifiant le fichier le fichier lié au lien symbolique change aussi)
 ________________________________________________________________________________________________
 
-34) ls -lrt *, (j'ai rw pour user donc je peux le modifier donc je peux le modifier).
+34) ls -lrt *, (j'ai rw pour user donc je peux le modifier).
 ________________________________________________________________________________________________
 
-35) chmod 777 sardar1.txt (je donne le droit d'accès à tou le monde)
+35) chmod 777 sardar1.txt (je donne le droit d'accès à tous le monde)
 ________________________________________________________________________________________________
 
 36)tar jcvf archive.tar.bz2 5AS05-partie3
