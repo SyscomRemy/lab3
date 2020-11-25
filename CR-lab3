@@ -28,7 +28,7 @@ informations: taille réelle : 34359 octets, portion de disque occupées : 72
 Accès: user (read&write),groupes (read&write),others(read).
 ________________________________________________________________________________________________
 
-8) commande : ls -d .* (Oui il y a 2 fichiers cachés .lightbulb et .git)
+8) commande : ls -d .* (Oui il y a 1 fichier caché .lightbulb)
 ________________________________________________________________________________________________
 
 9)ls -lart
@@ -110,7 +110,7 @@ ________________________________________________________________________________
 (en modifiant le fichier le fichier lié au lien symbolique change aussi)
 ________________________________________________________________________________________________
 
-34) ls -lrt *, (j'ai rw pour user donc je peux le modifier).
+34) ls -lrt *, (j'ai rw pour user donc je ne peux pas y accéder car il n'y a pas le x).
 ________________________________________________________________________________________________
 
 35) chmod 777 sardar1.txt (je donne le droit d'accès à tous le monde)
