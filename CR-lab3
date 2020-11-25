@@ -9,7 +9,6 @@ ________________________________________________________________________________
 4) Accès au dossier : cd 5AS05-partie3
    liste des fichiers: ls 
    ls -lrt 
-(option l = droit d'accès, option t = trier en fonction de la date, option r = liste des caractéristiques de chaque fichiers)
 
 on a 3 fichiers + 1 répertoire que linux comprend comme un fichier aussi.
 README: 24 octes, MICROSOFT: 34359 octets, sardar: 4096 octets (taille minimal d'un fichier),fichier texte: 70408 octets
